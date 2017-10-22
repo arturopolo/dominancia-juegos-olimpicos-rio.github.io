@@ -8,7 +8,7 @@ De acuerdo al Comit&eacute; Internacional Ol&iacute;mpico, los diferentes deport
 </p>
 </div>
 <br>
-<table align="center" >
+<table align="center">
   <tbody>
 	  <tr><th>Categor&iacute;a</th><th>Deporte Individual</th><th>Deporte Equipo</th></tr>
 		<tr><td align="center">A</td><td>Ateletismo, Nataci&oacute;n, Gimnasia</td><td align="center">——</td></tr>
