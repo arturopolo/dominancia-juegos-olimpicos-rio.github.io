@@ -91,19 +91,22 @@ linearGradient.append("animate")
 linearGradient.append("stop")
 	.attr("offset","5%")
 	//.attr("stop-color","#E8E8E8");
-	.attr("stop-color","#FCCFCE");
+	//.attr("stop-color","#FCCFCE");
+	.attr("stop-color","#66c2a4");
 linearGradient.append("stop")
 	.attr("offset","45%")
 	//.attr("stop-color","#A3A3A3");
-	.attr("stop-color","#FD9593");
+	//.attr("stop-color","#FD9593");
+	.attr("stop-color","#99d8c9");
 linearGradient.append("stop")
 	.attr("offset","55%")
 	//.attr("stop-color","#A3A3A3");
-	.attr("stop-color","#FD9593");
+	.attr("stop-color","#99d8c9");
 linearGradient.append("stop")
 	.attr("offset","95%")
 	//.attr("stop-color","#E8E8E8");
-	.attr("stop-color","#FCCFCE");
+	//.attr("stop-color","#FCCFCE");
+	.attr("stop-color","#66c2a4");
 	
 ////////////////////////////////////////////////////////////
 ////////////////////////// Data ////////////////////////////
@@ -206,8 +209,8 @@ var g = wrapper.selectAll("g.group")
 	.on("mouseout", fade(opacityDefault));
 
 g.append("path")
-	.style("stroke", function(d,i) { return (Names[i] === "" ? "none" : "#581845"); })
-	.style("fill", function(d,i) { return (Names[i] === "" ? "none" : "#581845"); })
+	.style("stroke", function(d,i) { return (Names[i] === "" ? "none" : "#005a32"); })
+	.style("fill", function(d,i) { return (Names[i] === "" ? "none" : "#005a32"); })
 	.style("pointer-events", function(d,i) { return (Names[i] === "" ? "none" : "auto"); })
 	.attr("d", arc)
 	.attr("transform", function(d, i) { //Pull the two slices apart
