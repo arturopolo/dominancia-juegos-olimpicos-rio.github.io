@@ -19,7 +19,7 @@ De acuerdo al Comit&eacute; Internacional Ol&iacute;mpico, los diferentes deport
 	</tbody>
 </table>
 <br>
-<img src="https://arturopolo.github.io/hurtos-motocicletas-colombia.github.io/ImagenReadME.PNG">
+<img src="https://arturopolo.github.io/dominancia-juegos-olimpicos-rio.github.io/ImagenReadME.png">
 <br>
 <p align="justify">Como resultado se obtuvo que:</p>
 <ul>
