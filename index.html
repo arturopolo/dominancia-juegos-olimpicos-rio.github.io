@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+	<title>From your Education to your Job</title>
+
+	<!-- D3.js -->	
+    <script src="http://d3js.org/d3.v3.js"></script>
+	<script src="d3.stretched.chord.js"></script>
+	<script src="d3.layout.chord.sort.js"></script>
+	
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<!-- Open Sans & CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300' rel='stylesheet' type='text/css'>
+	  <style>
+		body {
+          font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: rgb(128,128,128);
+		  font-size: 12px;
+		  font-weight: 400;
+		  color: #525252;
+		  text-align: center;
+		}	
+		
+		line {
+		  stroke: #000;
+		  stroke-width: 1.px;
+		}
+
+		text {
+		  font-size: 8px;
+		}
+
+		path.chord {
+		  fill-opacity: .80;
+		}
+		
+		.title {
+			text-anchor: middle;
+			fill: #3B3B3B;
+			font-weight: 300;
+			font-size: 16px;
+		}
+		.titleLine {
+			stroke: #DCDCDC;
+			shape-rendering: crispEdges;
+		}
+		
+		.title-h3 {
+		    margin-top: 20px;
+		    margin-bottom: 10px;
+		    font-size: 24px;
+		    font-weight: 500;
+			line-height: 1.1;
+			color: #3B3B3B;
+		}
+		
+		@media (min-width: 500px) {
+		  .explanation {
+			width: 100%; 
+			margin: 0 auto;
+			text-align: justify;
+		  }
+		}
+
+		div.tooltip {
+		  position: absolute;
+		  text-align: center;
+		  width: 60px;
+		  height: 28px;
+		  padding: 2px;
+		  font: 12px sans-serif;
+		  background: lightgray;
+		  border: 0px;
+		  border-radius: 8px;
+		  pointer-events: none;
+		}		
+
+		table.category {
+			border: 1px solid lightgray;
+	        border-radius: 8px;
+	        text-align: center;
+		}
+
+	    td {
+	        font-size: 12px;
+	        border-bottom: 1px solid #ddd;
+	        vertical-align: center;
+	        text-align: center;
+	    }
+
+	    th {
+	        font-size: 13px;   
+	        background-color: rgb(250,250,250);
+	        border-bottom: 1px solid #ddd
+	    }		
+	  </style>
+  </head>
+  <body>
+	<div class="title-h3">Dominancia o especialistas en las deportes de los Juegos Ol&iacute;mpicos de R&iacute;o 2016 ?</div>
+	<br>
+	<br>
+    <table>
+    	<tr>
+			<td width="60%">
+				<div id="chart"></div>
+			    <script src="script.js"></script>
+			</td>
+			<td width="40%">
+				<div style="width: 100%;">
+					<div class="explanation">
+					En los Juegos Ol&iacute;mpicos de R&iacute;o 2016 participaron 11.528 atletas de 204 nacionalidades repartidos de la siguiente forma:
+					</div>
+				</div>
+				<br>    			
+				<table class="category" align="center" >
+					<tbody>
+						<tr><th>Continente</th><th>Nacionalidades</th><th>Atletas</th></tr>
+						<tr><td align="center">Europa</td><td>47</td><td>4.759</td></tr>
+						<tr><td align="center">Asia</td><td>46</td><td>2.361</td></tr>
+						<tr><td align="center">NorteAm&eacute;rica</td><td>27</td><td>1.484</td></tr>
+						<tr><td align="center">SurAm&eacute;rica</td><td>14</td><td>1.126</td></tr>
+						<tr><td align="center">Africa</td><td>53</td><td>1.027</td></tr>
+						<tr><td align="center">Ocean&iacute;a</td><td>16</td><td>762</td></tr>
+						<tr><td align="center">Otros</td><td>53</td><td>9</td></tr>
+						<tr><th>Total</th><th>204</th><th>11.528</th></tr>
+					</tbody>
+				</table>
+				<br>
+				<div style="width: 100%;">
+					<div class="explanation">
+					De acuerdo al Comit&eacute; Internacional Ol&iacute;mpico, las diferentes modalidades se agrupan en cinco categor&iacute;as a partie de su relevancia y popularidad. Estas categor&iacute;as son:
+					</div>
+				</div>
+				<br>
+			 	<table class="category" align="center" >
+					<tbody>
+						<tr><th>Categor&iacute;a</th><th>Deporte Individual</th><th>Deporte Equipo</th></tr>
+						<tr><td align="center">A</td><td>Ateletismo, Nataci&oacute;n, Gimnasia</td><td align="center">——</td></tr>
+						<tr><td align="center">B</td><td>Ciclismo, Tennis</td><td>Baloncesto, F&uacute;tbol, Volleyball</td></tr>
+						<tr><td align="center">C</td><td>Tiro con arco, Badminton, Boxeo, Judo, Remo, Tiro, Tennis de mesa, Levantamiento de pesas</td><td align="center">——</td></tr>
+						<tr><td align="center">D</td><td>Canotaje, Ecuestre, Esgrima,<br>Navegaci&oacute;n, Taekwondo, Triathlon, Lucha</td><td>Bal&oacute;n mano, Hockey sobre cesped</td></tr>
+						<tr><td align="center">E</td><td>Oentathlon, Golf</td><td>Rugby</td></tr>
+					</tbody>
+				</table>
+				<br>
+				<div style="width: 100%;">
+					<div class="explanation">
+					Dado que ni el n&uacute;mero de atletas que participaron por pa&iacute;s en cada una de las modalidades ni el n&uacute;mero de pa&iacute;ses por continente es uniforme, necesitamos calcular un &iacute;ndice que relacione el n&uacute;mero de atletas que participaron por continente con el n&uacute;mero de medallas obtenidas para determinar cuál es la especialidad por continente. Con este índice se puede obtener que:
+						<ul>
+							<li><b>EUROPA</b> obtuvo medallas en todas las modalidades. Sus fortalezas están en los deportes de la categoría B y D.</li>
+							<li><b>NORTEAMERICA</b> comparte dominancia con Europa en la categoría B pero domina en la categoría A.</li>
+							<li><b>ASIA</b> es el que manda en las modalidades de la categoría C.</li>
+							<li><b>OCEANIA</b> lidera la medallería en los deportes que componen la categoría E. <b>AFRICA</b> tambi&eacute;n registra una participaci&oacute;n importante en esta categor&iacute;a</li>
+							<li><b>SURAMERICA</b> no aparece como líder en ninguna categroría, registrando su mayor participación en la categoría B.</li>
+						</ul>
+
+					</div>
+				</div>
+			</td>
+    	</tr>
+    </table>
+  </body>
+</html>
