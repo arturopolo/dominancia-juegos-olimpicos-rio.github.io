@@ -1,4 +1,4 @@
-# Análisis para demostrar si existe una dominancia absoluta de alg&uacute;n continente en los Juegos Ol&iacute;mpicos de R&iacute;o 2016
+# Análisis para demostrar si existe una dominancia de alg&uacute;n continente en los Juegos Ol&iacute;mpicos de R&iacute;o 2016 o por el contrario es un tema de especialidades
 
 <p align="justify">
 En los Juegos Ol&iacute;mpicos de R&iacute;o 2016 participaron 11.528 atletas de 204 nacionalidades. Dado que, ni el n&uacute;mero de atletas que participaron por pa&iacute;s en cada una de las modalidades ni el n&uacute;mero de pa&iacute;ses por continente es uniforme, para demostrar si existe o no una dominancia por parte de alg&uacute;n contienente necesitamos calcular un &iacute;ndice que relacione el n&uacute;mero de atletas que participaron con el n&uacute;mero de medallas obtenidas por categor&iacute;a.
