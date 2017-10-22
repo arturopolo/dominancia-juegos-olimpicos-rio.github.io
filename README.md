@@ -21,13 +21,13 @@ De acuerdo al Comit&eacute; Internacional Ol&iacute;mpico, los diferentes deport
 <br>
 <p align="justify">
   Como resultado se obtuvo que:
-  <ul>
+  <ol>
     <li>Europa domina en las categor&iacute;as B y D.</li>
     <li>NorteAm&eacute;rica domina en las categor&iacute;as A y B.</li>
     <li>Asia domina en la categor&iacute;a C.</li>
     <li>Ocean&iacute;a y Africa dominan en la categor&iacute;a E.</li>
     <li>SurAm&eacute;rica aunque no domina, tiene su mejor desempe&ntilde;o en la categor&iacute;a B.</li>
-  </ul>
+  </ol>
 </p>
 </br>
 <a href="https://arturopolo.github.io/dominancia-juegos-olimpicos-rio.github.io/">Visit Project Page</a>
