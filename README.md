@@ -19,6 +19,8 @@ De acuerdo al Comit&eacute; Internacional Ol&iacute;mpico, los diferentes deport
 	</tbody>
 </table>
 <br>
+<img src="https://arturopolo.github.io/hurtos-motocicletas-colombia.github.io/ImagenReadME.PNG">
+<br>
 <p align="justify">Como resultado se obtuvo que:</p>
 <ul>
     <li>Europa domina en las categor&iacute;as B y D.</li>
