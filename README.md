@@ -19,7 +19,7 @@ De acuerdo al Comit&eacute; Internacional Ol&iacute;mpico, los diferentes deport
 	</tbody>
 </table>
 <br>
-<img src="https://arturopolo.github.io/dominancia-juegos-olimpicos-rio.github.io/Overview.jpg">
+<img src="https://arturopolo.github.io/dominancia-juegos-olimpicos-rio.github.io/ImagenReadME.jpg">
 <br>
 <p align="justify">Como resultado se obtuvo que:</p>
 <ul>
